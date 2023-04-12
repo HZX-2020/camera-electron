@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    /> -->
+    <title>Document</title>
+    <style>
+      html,body {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        
+      }
+      .btns {
+        display: flex;
+        justify-content: flex-start;
+        gap: 80px;
+      }
+      main {
+        width: 80vw;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 5px #9b59b6;
+        border-radius: 50%;
+        overflow: hidden;
+        -webkit-app-region: drag;
+      }
+      video {
+        object-fit: fill;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <a href="https://www.baidu.com" target="__blank">百度</a>
+    <input type="text" />
+    <button id="btn">设置标题</button>
+    <br /> -->
+    <div class="btns">
+      <button id="openVideo">开启摄像头</button>
+      <button id="closeVideo">关闭摄像头</button>
+    </div>
+    
+    <main>
+      <video></video>
+    </main>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
