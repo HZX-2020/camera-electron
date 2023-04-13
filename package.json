@@ -5,11 +5,13 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec electron ."
+    "dev": "nodemon --exec electron .",
+    "test2": "standard && node renderer.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^23.1.4"
+    "electron": "^23.1.4",
+    "standard": "^17.0.0"
   }
 }
